@@ -788,7 +788,7 @@ class PROTOBUF_EXPORT UninterpretedOption_NamePart final :
   // implements Message ----------------------------------------------
 
   UninterpretedOption_NamePart* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<UninterpretedOption_NamePart>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<UninterpretedOption_NamePart>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const UninterpretedOption_NamePart& from);
@@ -984,7 +984,7 @@ class PROTOBUF_EXPORT SourceCodeInfo_Location final :
   // implements Message ----------------------------------------------
 
   SourceCodeInfo_Location* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<SourceCodeInfo_Location>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<SourceCodeInfo_Location>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const SourceCodeInfo_Location& from);
@@ -1258,7 +1258,7 @@ class PROTOBUF_EXPORT GeneratedCodeInfo_Annotation final :
   // implements Message ----------------------------------------------
 
   GeneratedCodeInfo_Annotation* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<GeneratedCodeInfo_Annotation>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<GeneratedCodeInfo_Annotation>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const GeneratedCodeInfo_Annotation& from);
@@ -1522,7 +1522,7 @@ class PROTOBUF_EXPORT FieldOptions_EditionDefault final :
   // implements Message ----------------------------------------------
 
   FieldOptions_EditionDefault* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<FieldOptions_EditionDefault>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<FieldOptions_EditionDefault>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const FieldOptions_EditionDefault& from);
@@ -1718,7 +1718,7 @@ class PROTOBUF_EXPORT FeatureSet final :
   // implements Message ----------------------------------------------
 
   FeatureSet* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<FeatureSet>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<FeatureSet>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const FeatureSet& from);
@@ -2266,7 +2266,7 @@ class PROTOBUF_EXPORT ExtensionRangeOptions_Declaration final :
   // implements Message ----------------------------------------------
 
   ExtensionRangeOptions_Declaration* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<ExtensionRangeOptions_Declaration>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<ExtensionRangeOptions_Declaration>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const ExtensionRangeOptions_Declaration& from);
@@ -2507,7 +2507,7 @@ class PROTOBUF_EXPORT EnumDescriptorProto_EnumReservedRange final :
   // implements Message ----------------------------------------------
 
   EnumDescriptorProto_EnumReservedRange* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<EnumDescriptorProto_EnumReservedRange>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<EnumDescriptorProto_EnumReservedRange>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const EnumDescriptorProto_EnumReservedRange& from);
@@ -2697,7 +2697,7 @@ class PROTOBUF_EXPORT DescriptorProto_ReservedRange final :
   // implements Message ----------------------------------------------
 
   DescriptorProto_ReservedRange* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<DescriptorProto_ReservedRange>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<DescriptorProto_ReservedRange>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const DescriptorProto_ReservedRange& from);
@@ -2887,7 +2887,7 @@ class PROTOBUF_EXPORT UninterpretedOption final :
   // implements Message ----------------------------------------------
 
   UninterpretedOption* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<UninterpretedOption>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<UninterpretedOption>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const UninterpretedOption& from);
@@ -3169,7 +3169,7 @@ class PROTOBUF_EXPORT SourceCodeInfo final :
   // implements Message ----------------------------------------------
 
   SourceCodeInfo* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<SourceCodeInfo>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<SourceCodeInfo>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const SourceCodeInfo& from);
@@ -3354,7 +3354,7 @@ class PROTOBUF_EXPORT GeneratedCodeInfo final :
   // implements Message ----------------------------------------------
 
   GeneratedCodeInfo* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<GeneratedCodeInfo>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<GeneratedCodeInfo>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const GeneratedCodeInfo& from);
@@ -3539,7 +3539,7 @@ class PROTOBUF_EXPORT FeatureSetDefaults_FeatureSetEditionDefault final :
   // implements Message ----------------------------------------------
 
   FeatureSetDefaults_FeatureSetEditionDefault* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<FeatureSetDefaults_FeatureSetEditionDefault>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<FeatureSetDefaults_FeatureSetEditionDefault>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const FeatureSetDefaults_FeatureSetEditionDefault& from);
@@ -3733,7 +3733,7 @@ class PROTOBUF_EXPORT ServiceOptions final :
   // implements Message ----------------------------------------------
 
   ServiceOptions* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<ServiceOptions>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<ServiceOptions>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const ServiceOptions& from);
@@ -4126,7 +4126,7 @@ class PROTOBUF_EXPORT OneofOptions final :
   // implements Message ----------------------------------------------
 
   OneofOptions* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<OneofOptions>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<OneofOptions>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const OneofOptions& from);
@@ -4506,7 +4506,7 @@ class PROTOBUF_EXPORT MethodOptions final :
   // implements Message ----------------------------------------------
 
   MethodOptions* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<MethodOptions>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<MethodOptions>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const MethodOptions& from);
@@ -4933,7 +4933,7 @@ class PROTOBUF_EXPORT MessageOptions final :
   // implements Message ----------------------------------------------
 
   MessageOptions* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<MessageOptions>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<MessageOptions>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const MessageOptions& from);
@@ -5378,7 +5378,7 @@ class PROTOBUF_EXPORT FileOptions final :
   // implements Message ----------------------------------------------
 
   FileOptions* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<FileOptions>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<FileOptions>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const FileOptions& from);
@@ -6099,7 +6099,7 @@ class PROTOBUF_EXPORT FieldOptions final :
   // implements Message ----------------------------------------------
 
   FieldOptions* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<FieldOptions>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<FieldOptions>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const FieldOptions& from);
@@ -6730,7 +6730,7 @@ class PROTOBUF_EXPORT FeatureSetDefaults final :
   // implements Message ----------------------------------------------
 
   FeatureSetDefaults* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<FeatureSetDefaults>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<FeatureSetDefaults>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const FeatureSetDefaults& from);
@@ -6942,7 +6942,7 @@ class PROTOBUF_EXPORT ExtensionRangeOptions final :
   // implements Message ----------------------------------------------
 
   ExtensionRangeOptions* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<ExtensionRangeOptions>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<ExtensionRangeOptions>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const ExtensionRangeOptions& from);
@@ -7377,7 +7377,7 @@ class PROTOBUF_EXPORT EnumValueOptions final :
   // implements Message ----------------------------------------------
 
   EnumValueOptions* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<EnumValueOptions>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<EnumValueOptions>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const EnumValueOptions& from);
@@ -7783,7 +7783,7 @@ class PROTOBUF_EXPORT EnumOptions final :
   // implements Message ----------------------------------------------
 
   EnumOptions* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<EnumOptions>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<EnumOptions>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const EnumOptions& from);
@@ -8202,7 +8202,7 @@ class PROTOBUF_EXPORT OneofDescriptorProto final :
   // implements Message ----------------------------------------------
 
   OneofDescriptorProto* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<OneofDescriptorProto>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<OneofDescriptorProto>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const OneofDescriptorProto& from);
@@ -8402,7 +8402,7 @@ class PROTOBUF_EXPORT MethodDescriptorProto final :
   // implements Message ----------------------------------------------
 
   MethodDescriptorProto* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<MethodDescriptorProto>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<MethodDescriptorProto>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const MethodDescriptorProto& from);
@@ -8666,7 +8666,7 @@ class PROTOBUF_EXPORT FieldDescriptorProto final :
   // implements Message ----------------------------------------------
 
   FieldDescriptorProto* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<FieldDescriptorProto>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<FieldDescriptorProto>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const FieldDescriptorProto& from);
@@ -9064,7 +9064,7 @@ class PROTOBUF_EXPORT EnumValueDescriptorProto final :
   // implements Message ----------------------------------------------
 
   EnumValueDescriptorProto* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<EnumValueDescriptorProto>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<EnumValueDescriptorProto>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const EnumValueDescriptorProto& from);
@@ -9277,7 +9277,7 @@ class PROTOBUF_EXPORT DescriptorProto_ExtensionRange final :
   // implements Message ----------------------------------------------
 
   DescriptorProto_ExtensionRange* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<DescriptorProto_ExtensionRange>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<DescriptorProto_ExtensionRange>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const DescriptorProto_ExtensionRange& from);
@@ -9484,7 +9484,7 @@ class PROTOBUF_EXPORT ServiceDescriptorProto final :
   // implements Message ----------------------------------------------
 
   ServiceDescriptorProto* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<ServiceDescriptorProto>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<ServiceDescriptorProto>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const ServiceDescriptorProto& from);
@@ -9704,7 +9704,7 @@ class PROTOBUF_EXPORT EnumDescriptorProto final :
   // implements Message ----------------------------------------------
 
   EnumDescriptorProto* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<EnumDescriptorProto>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<EnumDescriptorProto>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const EnumDescriptorProto& from);
@@ -9976,7 +9976,7 @@ class PROTOBUF_EXPORT DescriptorProto final :
   // implements Message ----------------------------------------------
 
   DescriptorProto* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<DescriptorProto>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<DescriptorProto>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const DescriptorProto& from);
@@ -10349,7 +10349,7 @@ class PROTOBUF_EXPORT FileDescriptorProto final :
   // implements Message ----------------------------------------------
 
   FileDescriptorProto* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<FileDescriptorProto>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<FileDescriptorProto>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const FileDescriptorProto& from);
@@ -10767,7 +10767,7 @@ class PROTOBUF_EXPORT FileDescriptorSet final :
   // implements Message ----------------------------------------------
 
   FileDescriptorSet* New(::google::protobuf::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<FileDescriptorSet>(arena);
+    return ::google::protobuf::Message::DefaultConstruct<FileDescriptorSet>(arena);
   }
   using ::google::protobuf::Message::CopyFrom;
   void CopyFrom(const FileDescriptorSet& from);
@@ -11527,7 +11527,7 @@ inline ::google::protobuf::FileOptions* FileDescriptorProto::_internal_mutable_o
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000008u;
   if (_impl_.options_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::FileOptions>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::FileOptions>(GetArena());
     _impl_.options_ = reinterpret_cast<::google::protobuf::FileOptions*>(p);
   }
   return _impl_.options_;
@@ -11623,7 +11623,7 @@ inline ::google::protobuf::SourceCodeInfo* FileDescriptorProto::_internal_mutabl
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000010u;
   if (_impl_.source_code_info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::SourceCodeInfo>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::SourceCodeInfo>(GetArena());
     _impl_.source_code_info_ = reinterpret_cast<::google::protobuf::SourceCodeInfo*>(p);
   }
   return _impl_.source_code_info_;
@@ -11879,7 +11879,7 @@ inline ::google::protobuf::ExtensionRangeOptions* DescriptorProto_ExtensionRange
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000001u;
   if (_impl_.options_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::ExtensionRangeOptions>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::ExtensionRangeOptions>(GetArena());
     _impl_.options_ = reinterpret_cast<::google::protobuf::ExtensionRangeOptions*>(p);
   }
   return _impl_.options_;
@@ -12404,7 +12404,7 @@ inline ::google::protobuf::MessageOptions* DescriptorProto::_internal_mutable_op
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000002u;
   if (_impl_.options_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::MessageOptions>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::MessageOptions>(GetArena());
     _impl_.options_ = reinterpret_cast<::google::protobuf::MessageOptions*>(p);
   }
   return _impl_.options_;
@@ -12982,7 +12982,7 @@ inline ::google::protobuf::FeatureSet* ExtensionRangeOptions::_internal_mutable_
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000001u;
   if (_impl_.features_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::FeatureSet>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::FeatureSet>(GetArena());
     _impl_.features_ = reinterpret_cast<::google::protobuf::FeatureSet*>(p);
   }
   return _impl_.features_;
@@ -13580,7 +13580,7 @@ inline ::google::protobuf::FieldOptions* FieldDescriptorProto::_internal_mutable
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000020u;
   if (_impl_.options_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::FieldOptions>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::FieldOptions>(GetArena());
     _impl_.options_ = reinterpret_cast<::google::protobuf::FieldOptions*>(p);
   }
   return _impl_.options_;
@@ -13779,7 +13779,7 @@ inline ::google::protobuf::OneofOptions* OneofDescriptorProto::_internal_mutable
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000002u;
   if (_impl_.options_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::OneofOptions>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::OneofOptions>(GetArena());
     _impl_.options_ = reinterpret_cast<::google::protobuf::OneofOptions*>(p);
   }
   return _impl_.options_;
@@ -14059,7 +14059,7 @@ inline ::google::protobuf::EnumOptions* EnumDescriptorProto::_internal_mutable_o
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000002u;
   if (_impl_.options_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::EnumOptions>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::EnumOptions>(GetArena());
     _impl_.options_ = reinterpret_cast<::google::protobuf::EnumOptions*>(p);
   }
   return _impl_.options_;
@@ -14408,7 +14408,7 @@ inline ::google::protobuf::EnumValueOptions* EnumValueDescriptorProto::_internal
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000002u;
   if (_impl_.options_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::EnumValueOptions>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::EnumValueOptions>(GetArena());
     _impl_.options_ = reinterpret_cast<::google::protobuf::EnumValueOptions*>(p);
   }
   return _impl_.options_;
@@ -14628,7 +14628,7 @@ inline ::google::protobuf::ServiceOptions* ServiceDescriptorProto::_internal_mut
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000002u;
   if (_impl_.options_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::ServiceOptions>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::ServiceOptions>(GetArena());
     _impl_.options_ = reinterpret_cast<::google::protobuf::ServiceOptions*>(p);
   }
   return _impl_.options_;
@@ -14941,7 +14941,7 @@ inline ::google::protobuf::MethodOptions* MethodDescriptorProto::_internal_mutab
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000008u;
   if (_impl_.options_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::MethodOptions>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::MethodOptions>(GetArena());
     _impl_.options_ = reinterpret_cast<::google::protobuf::MethodOptions*>(p);
   }
   return _impl_.options_;
@@ -16088,7 +16088,7 @@ inline ::google::protobuf::FeatureSet* FileOptions::_internal_mutable_features()
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000400u;
   if (_impl_.features_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::FeatureSet>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::FeatureSet>(GetArena());
     _impl_.features_ = reinterpret_cast<::google::protobuf::FeatureSet*>(p);
   }
   return _impl_.features_;
@@ -16377,7 +16377,7 @@ inline ::google::protobuf::FeatureSet* MessageOptions::_internal_mutable_feature
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000001u;
   if (_impl_.features_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::FeatureSet>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::FeatureSet>(GetArena());
     _impl_.features_ = reinterpret_cast<::google::protobuf::FeatureSet*>(p);
   }
   return _impl_.features_;
@@ -16980,7 +16980,7 @@ inline ::google::protobuf::FeatureSet* FieldOptions::_internal_mutable_features(
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000001u;
   if (_impl_.features_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::FeatureSet>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::FeatureSet>(GetArena());
     _impl_.features_ = reinterpret_cast<::google::protobuf::FeatureSet*>(p);
   }
   return _impl_.features_;
@@ -17129,7 +17129,7 @@ inline ::google::protobuf::FeatureSet* OneofOptions::_internal_mutable_features(
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000001u;
   if (_impl_.features_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::FeatureSet>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::FeatureSet>(GetArena());
     _impl_.features_ = reinterpret_cast<::google::protobuf::FeatureSet*>(p);
   }
   return _impl_.features_;
@@ -17362,7 +17362,7 @@ inline ::google::protobuf::FeatureSet* EnumOptions::_internal_mutable_features()
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000001u;
   if (_impl_.features_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::FeatureSet>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::FeatureSet>(GetArena());
     _impl_.features_ = reinterpret_cast<::google::protobuf::FeatureSet*>(p);
   }
   return _impl_.features_;
@@ -17539,7 +17539,7 @@ inline ::google::protobuf::FeatureSet* EnumValueOptions::_internal_mutable_featu
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000001u;
   if (_impl_.features_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::FeatureSet>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::FeatureSet>(GetArena());
     _impl_.features_ = reinterpret_cast<::google::protobuf::FeatureSet*>(p);
   }
   return _impl_.features_;
@@ -17716,7 +17716,7 @@ inline ::google::protobuf::FeatureSet* ServiceOptions::_internal_mutable_feature
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000001u;
   if (_impl_.features_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::FeatureSet>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::FeatureSet>(GetArena());
     _impl_.features_ = reinterpret_cast<::google::protobuf::FeatureSet*>(p);
   }
   return _impl_.features_;
@@ -17950,7 +17950,7 @@ inline ::google::protobuf::FeatureSet* MethodOptions::_internal_mutable_features
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000001u;
   if (_impl_.features_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::FeatureSet>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::FeatureSet>(GetArena());
     _impl_.features_ = reinterpret_cast<::google::protobuf::FeatureSet*>(p);
   }
   return _impl_.features_;
@@ -18759,7 +18759,7 @@ inline ::google::protobuf::FeatureSet* FeatureSetDefaults_FeatureSetEditionDefau
   PROTOBUF_TSAN_WRITE(&_impl_._tsan_detect_race);
   _impl_._has_bits_[0] |= 0x00000001u;
   if (_impl_.features_ == nullptr) {
-    auto* p = CreateMaybeMessage<::google::protobuf::FeatureSet>(GetArena());
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::google::protobuf::FeatureSet>(GetArena());
     _impl_.features_ = reinterpret_cast<::google::protobuf::FeatureSet*>(p);
   }
   return _impl_.features_;

@@ -324,6 +324,77 @@ TEST(ArenaTest, ArenaOnlyTypesCanBeConstructed) {
   Arena::CreateMessage<OnlyArenaConstructible>(&arena);
 }
 
+TEST(ArenaTest, GetConstructTypeWorks) {
+  using T = TestAllTypes;
+  using Peer = internal::ArenaTestPeer;
+  using CT = typename Peer::ConstructType;
+  EXPECT_EQ(CT::kDefault, (Peer::GetConstructType<T>()));
+  EXPECT_EQ(CT::kCopy, (Peer::GetConstructType<T, const T&>()));
+  EXPECT_EQ(CT::kCopy, (Peer::GetConstructType<T, T&>()));
+  EXPECT_EQ(CT::kCopy, (Peer::GetConstructType<T, const T&&>()));
+  EXPECT_EQ(CT::kMove, (Peer::GetConstructType<T, T&&>()));
+  EXPECT_EQ(CT::kUnknown, (Peer::GetConstructType<T, double&>()));
+  EXPECT_EQ(CT::kUnknown, (Peer::GetConstructType<T, T&, T&>()));
+
+  // For non-protos, it's always unknown
+  EXPECT_EQ(CT::kUnknown, (Peer::GetConstructType<int, const int&>()));
+}
+
+class DispatcherTestProto : public Message {
+ public:
+  using InternalArenaConstructable_ = void;
+  explicit DispatcherTestProto(Arena*) { ABSL_LOG(FATAL); }
+  DispatcherTestProto(Arena*, const DispatcherTestProto&) { ABSL_LOG(FATAL); }
+  DispatcherTestProto* New(Arena*) const final { ABSL_LOG(FATAL); }
+  Metadata GetMetadata() const final { ABSL_LOG(FATAL); }
+};
+// We use a specialization to inject behavior for the test.
+// This test is very intrusive and will have to be fixed if we change the
+// implementation of CreateMessage.
+absl::string_view hook_called;
+template <>
+void* Arena::DefaultConstruct<DispatcherTestProto>(Arena*) {
+  hook_called = "default";
+  return nullptr;
+}
+template <>
+void* Arena::CopyConstruct<DispatcherTestProto>(Arena*, const void*) {
+  hook_called = "copy";
+  return nullptr;
+}
+template <>
+DispatcherTestProto* Arena::CreateMessageInternal<DispatcherTestProto, int>(
+    Arena*, int&&) {
+  hook_called = "fallback";
+  return nullptr;
+}
+
+TEST(ArenaTest, CreateMessageDispatchesToSpecialFunctions) {
+  hook_called = "";
+  Arena::CreateMessage<DispatcherTestProto>(nullptr);
+  EXPECT_EQ(hook_called, "default");
+
+  void* p;
+  DispatcherTestProto& ref = *reinterpret_cast<DispatcherTestProto*>(&p);
+  const DispatcherTestProto& cref = ref;
+
+  hook_called = "";
+  Arena::CreateMessage<DispatcherTestProto>(nullptr);
+  EXPECT_EQ(hook_called, "default");
+
+  hook_called = "";
+  Arena::CreateMessage<DispatcherTestProto>(nullptr, ref);
+  EXPECT_EQ(hook_called, "copy");
+
+  hook_called = "";
+  Arena::CreateMessage<DispatcherTestProto>(nullptr, cref);
+  EXPECT_EQ(hook_called, "copy");
+
+  hook_called = "";
+  Arena::CreateMessage<DispatcherTestProto>(nullptr, 1);
+  EXPECT_EQ(hook_called, "fallback");
+}
+
 TEST(ArenaTest, Parsing) {
   TestAllTypes original;
   TestUtil::SetAllFields(&original);
